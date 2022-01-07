@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 public class OperationHelper {
 
     /**
-     * Filter only node whose evaluation is equal to the desired result
+     * Filter only nodes whose evaluation is equal to the desired result
      * @param numberList: list of operands
      * @param result: desired result
      * @return a list of node whose evaluation is equal to the desired result
@@ -17,9 +17,9 @@ public class OperationHelper {
     }
 
     /**
-     *
-     * @param nodeList
-     * @return
+     * create all possible combinations of nodes from the basic operators (+, -, *, /)
+     * @param nodeList: a list of nodes' values
+     * @return : a list of all possibilities
      */
     private static List<Node> create(List<Node> nodeList){
         if (nodeList.size() > 1) {
